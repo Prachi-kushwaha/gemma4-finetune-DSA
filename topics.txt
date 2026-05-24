@@ -1,0 +1,546 @@
+1. Pattern Printing
+
+   Basic Patterns
+
+   square pattern
+   right triangle
+   inverted triangle
+   pyramid pattern
+   diamond pattern
+   hollow patterns
+   number patterns
+   alphabet patterns
+
+2. Arrays
+
+   Basic Arrays
+
+   find largest element
+   second largest element
+   linear search
+   remove duplicates from sorted array
+   rotate array by k places
+   move zeros to end
+   find missing number
+   maximum consecutive ones
+   find number appearing once
+
+   Intermediate Arrays
+
+   union of two sorted arrays
+   intersection of arrays
+   longest subarray with sum k
+   two sum problem
+   sort array of 0s, 1s, 2s
+   Moore’s Voting Algorithm
+   Kadane’s Algorithm
+   rearrange elements by sign
+   leaders in an array
+   best time to buy and sell stock
+   next permutation
+   longest consecutive sequence
+
+   Matrix Problems
+
+   set matrix zeros
+   rotate matrix/image by 90 degrees
+   spiral traversal of matrix
+
+   Advanced Arrays
+
+   count subarrays with sum k
+   majority element II
+   3 sum
+   4 sum
+   number of subarrays with xor k
+   merge overlapping intervals
+   merge sorted arrays without extra space
+   find missing and repeating number
+   count inversions in an array
+   reverse pairs
+   maximum product subarray
+
+3. Sorting Algorithms
+
+   Basic Sorting
+
+   selection sort
+   bubble sort
+   insertion sort
+
+   Advanced Sorting
+
+   merge sort
+   quick sort
+   heap sort
+
+4. Binary Search
+
+   Basic Binary Search
+
+   Introduction to Binary Search
+   binary search
+   search insert position
+   first and last occurrence
+   count occurrences
+   lower bound and upper bound
+   search in rotated sorted array
+   minimum in rotated sorted array
+   find rotation count
+   single element in sorted array
+   find peak element
+
+   Binary Search on Answers
+
+   square root using binary search
+   nth root of an integer
+   Koko eating bananas
+   minimum days to make bouquets
+   smallest divisor given threshold
+   capacity to ship packages within d days
+   kth missing positive number
+   aggressive cows
+   allocate books
+   painters partition problem
+   split array largest sum
+   minimize/maximize distance between gas stations
+
+   Binary Search on 2D Arrays
+
+   median of two sorted arrays
+   kth element of two sorted arrays
+   row with maximum number of 1s
+   search in 2D matrix I
+   search in 2D matrix II
+
+5. Strings
+
+   Basic Strings
+
+   reverse string
+   palindrome check
+   sorting the sentence
+   sort vowels in a string
+   add strings
+   roman to integer
+   integer to roman
+
+   String Algorithms
+
+   longest palindromic substring
+   smallest distinct window
+   KMP algorithm (longest prefix suffix)
+   string matching
+   circular string matching
+
+6. Recursion
+
+   Introduction to Recursion
+   Parameterised and function Recursion
+   Recursion on subsquences
+   Printing subsquences whose sum is k
+   Combination Sum 1
+   Combination Sum 2
+   Subset sum
+   Subset sum 2
+   print all permutation of string/array
+   palindrome partitioning
+   k-th permutation sequence
+   tower of hanoi
+   josheps problem
+   print n-bit binary number having more 1s then 0s
+
+7. Backtracking
+
+   N-queens
+   sudoku solver
+   M-coloring
+   Rat in maze
+
+8. OOPS
+
+9. Linked Lists
+
+   Basic Linked Lists
+   Introduction to Linked list
+
+   insertion in linked list
+   deletion in linked list
+   reverse a linked list
+   find middle element of linked list
+   detect cycle in linked list
+   length of loop in linked list
+   starting point of cycle
+   delete middle node
+   remove nth node from end
+   merge two sorted linked lists
+   rotate linked list
+   check palindrome linked list
+
+   Intermediate Linked Lists
+
+   odd even linked list
+   sort linked list of 0s,1s,2s
+   add 2 numbers in linked list
+   add 1 to number represented by linked list
+   intersection point of two linked lists
+   doubly linked list
+   reverse DLL
+   delete all occurrences in DLL
+   find pairs with given sum in DLL
+   remove duplicates from sorted DLL
+
+   Advanced Linked Lists
+
+   reverse nodes in k-group
+   flatten linked list
+   merge k sorted linked lists
+   sort a linked list
+   clone linked list with random pointers
+   deep copy of linked list
+
+10. Stacks & Queues
+
+   Basic Stack & Queue
+
+   Introduction to stack and queue
+   balanced parenthesis
+   infix/prefix/postfix conversion
+   implement min stack
+   next greater element
+   previous smaller element
+   stock span problem
+
+   Intermediate Stack & Queue
+
+   next greater element II
+   asteroid collisions
+   remove k digits
+   trapping rainwater
+   sliding window maximum
+   celebrity problem
+
+   Advanced Stack & Queue
+
+   sum of subarray minimum
+   sum of subarray ranges
+   largest rectangle in histogram
+   maximal rectangle
+   LRU cache
+
+11. Binary Trees
+
+   Basic Binary Trees
+
+   Introduction to Binary Trees
+   preorder traversal
+   inorder traversal
+   postorder traversal
+   level order traversal
+   iterative traversals
+   maximum depth
+   check balanced binary tree
+   identical trees
+   zig-zag traversal
+   left/right view
+   symmetry check
+   root to node path
+   lowest common ancestor
+
+   Intermediate Binary Trees
+
+   diameter of binary tree
+   maximum path sum
+   boundary traversal
+   vertical order traversal
+   top view
+   bottom view
+   maximum width
+   children sum property
+   nodes at distance k
+   burn binary tree
+   count nodes in complete binary tree
+
+   Advanced Binary Trees
+
+   construct tree from traversals
+   serialize and deserialize tree
+   Morris traversal
+   flatten binary tree to linked list
+
+12. Binary Search Trees (BST)
+
+   Basic BST
+
+   Introduction to BST
+   search in BST
+   ceil in BST
+   floor in BST
+   insert node in BST
+   delete node in BST
+   check BST or not
+   LCA in BST
+
+   Intermediate BST
+
+   kth smallest/largest element
+   inorder successor/predecessor
+   BST iterator
+   two sum in BST
+
+   Advanced BST
+
+   construct BST from preorder
+   recover BST
+   correct swapped BST
+   largest BST in binary tree
+
+13. Heap
+
+   Basic Heap
+
+   Introduction to Heap
+   heap build
+   heap sort
+   height of heap
+   kth largest element
+   kth smallest element
+   merge max heaps
+
+   Intermediate Heap
+
+   min cost of ropes
+   last stone weight
+   take gifts from richest pile
+   kth largest in stream
+   kth element in matrix
+   median in stream
+   merge k sorted linked lists
+
+   Advanced Heap
+
+   merge k sorted arrays
+   smallest range from k lists
+   construct target array with multiple sums
+   BST to max heap
+   binary tree heap check
+
+14. Two Pointer & Sliding Window
+
+   Basic Sliding Window
+
+   max consecutive ones III
+   fruits into baskets
+   longest substring without repeating characters
+   longest substring with at most k distinct characters
+
+   Intermediate Sliding Window
+
+   maximum points from cards
+   number of substrings containing all three characters
+   longest repeating character replacement
+   binary subarrays with sum
+   count nice subarrays
+
+   Advanced Sliding Window
+
+   subarray with k different integers
+   minimum window substring
+
+15. Graphs (Introduction & Basics)
+
+   Introduction to Graphs
+   Types of Graphs
+   Graph Representation (Adjacency Matrix)
+   Graph Representation (Adjacency List)
+   Connected Components
+   BFS Traversal
+   DFS Traversal
+   Number of Provinces
+   Flood Fill Algorithm
+   Rotten Oranges
+   Cycle Detection in Undirected Graph using BFS
+   Cycle Detection in Undirected Graph using DFS
+   Distance of Nearest Cell Having 1
+   Surrounded Regions
+   Number of Enclaves
+   Word Ladder – I
+   Word Ladder – II
+   Bipartite Graph using BFS
+   Bipartite Graph using DFS
+   Detect Cycle in Directed Graph using DFS
+   Detect Cycle in Directed Graph using Kahn’s Algorithm
+   Eventual Safe States using DFS
+   Eventual Safe States using BFS
+   Topological Sort using DFS
+   Topological Sort using BFS (Kahn’s Algorithm)
+   Course Schedule – I
+   Course Schedule – II
+   Alien Dictionary
+   Shortest Path in DAG
+   Shortest Path in Undirected Graph with Unit Distance
+
+   Shortest Path Algorithms
+
+   Dijkstra’s Algorithm using Priority Queue
+   Dijkstra’s Algorithm using Set
+   Print Shortest Path
+   Shortest Path in Binary Matrix
+   Path with Minimum Effort
+   Cheapest Flights Within K Stops
+   Network Delay Time
+   Number of Ways to Arrive at Destination
+   Bellman Ford Algorithm
+   Floyd Warshall Algorithm
+   Find the City with the Smallest Number of Neighbors
+
+   Minimum Spanning Tree & Disjoint Set
+
+   Minimum Spanning Tree Introduction
+   Prim’s Algorithm
+   Kruskal’s Algorithm
+   Disjoint Set Union (Union by Rank)
+   Union by Size
+   Path Compression
+   Number of Operations to Make Network Connected
+   Most Stones Removed with Same Row or Column
+   Accounts Merge
+   Number of Islands – II
+   Making a Large Island
+   Swim in Rising Water
+
+   Advanced Graph Problems
+
+   Strongly Connected Components – Kosaraju’s Algorithm
+   Bridges in Graph – Tarjan’s Algorithm
+   Articulation Points in Graph
+   Critical Connections in a Network
+   Clone Graph
+   M-Coloring Problem
+   Euler Path & Euler Circuit
+   Hamiltonian Path
+   Graph Coloring
+   Snakes and Ladders
+   Open the Lock
+   Minimum Multiplications to Reach End
+   Reconstruct Itinerary
+   Evaluate Division
+   Minimum Genetic Mutation
+   Regions Cut By Slashes
+   Graph Valid Tree
+   Redundant Connection
+   Redundant Connection II
+   Remove Max Number of Edges to Keep Graph Fully Traversable
+   Satisfiability of Equality Equations
+   Word Search using Graph/DFS Concepts
+
+
+16. Introduction to Dynamic Programming
+
+   Introduction to Dynamic Programming
+
+   Memoization Technique
+   Tabulation Technique
+   Space Optimization
+   Climbing Stairs
+   Frog Jump
+   Frog Jump with K Distance
+   Maximum Sum of Non-Adjacent Elements
+   House Robber II
+
+   2D / Grid Dynamic Programming
+
+   Ninja’s Training
+   Grid Unique Paths
+   Grid Unique Paths II
+   Minimum Path Sum in Grid
+   Triangle Minimum Path Sum
+   Maximum Falling Path Sum
+   Cherry Pickup II
+   Ninja and Friends
+
+   DP on Subsequences
+
+   Subset Sum Equal to Target
+   Partition Equal Subset Sum
+   Partition Set Into 2 Subsets with Minimum Difference
+   Count Subsets with Sum K
+   Count Partitions with Given Difference
+   0/1 Knapsack
+   Minimum Coins
+   Target Sum
+   Coin Change II
+   Unbounded Knapsack
+   Rod Cutting Problem
+
+   DP on Strings
+
+   Longest Common Subsequence (LCS)
+   Print Longest Common Subsequence
+   Longest Common Substring
+   Longest Palindromic Subsequence
+   Minimum Insertions to Make String Palindrome
+   Minimum Operations to Convert String A to String B
+   Shortest Common Supersequence
+   Distinct Subsequences
+   Edit Distance
+   Wildcard Matching
+
+   DP on LIS (Longest Increasing Subsequence)
+
+   Longest Increasing Subsequence
+   Printing Longest Increasing Subsequence
+   Longest Divisible Subset
+   Longest String Chain
+   Longest Bitonic Subsequence
+   Number of Longest Increasing Subsequences
+
+   DP on Stocks
+
+   Best Time to Buy and Sell Stock
+   Buy and Sell Stock II
+   Buy and Sell Stock III
+   Buy and Sell Stock IV
+   Buy and Sell Stocks with Cooldown
+   Buy and Sell Stocks with Transaction Fee
+
+   DP on Matrix / Squares
+
+   Largest Rectangle in Histogram
+   Maximal Rectangle
+   Count Square Submatrices with All Ones
+
+   DP on Partition
+
+   Matrix Chain Multiplication
+   Minimum Cost to Cut the Stick
+   Burst Balloons
+   Evaluate Boolean Expression to True
+   Palindrome Partitioning II
+   Partition Array for Maximum Sum
+
+   DP on Graphs / Advanced DP
+
+   Fibonacci Using DP
+   Ways to Make Coin Change
+   Integer Break
+   Decode Ways
+   Word Break
+   House Robber Variations
+   Jump Game
+   Jump Game II
+   Partition DP Advanced Concepts
+
+17. Bit manipulation
+
+   check odd/even
+   power of 2
+   set ith bit
+   clear ith bit
+   toggle ith bit
+   count set bits
+   XOR basics
+   single number
+   two unique numbers
+   subsets using bits
+   bitmasking basics
