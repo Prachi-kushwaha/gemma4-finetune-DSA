@@ -1,2 +1,4 @@
 generated/*
 .env
+readme.md
+hub.py
