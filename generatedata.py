@@ -8,28 +8,35 @@ Output format : Alpaca JSONL  →  HuggingFace TRL / SFTTrainer
 import json
 import time
 import os
-import google.generativeai as genai
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
 import argparse
 from pathlib import Path
 from topics import DSA_TOPICS
 
 
-OUTPUT_FILE  = "generated/dataset.jsonl"
+OUTPUT_FILE  = "dataset.jsonl"
 DELAY_SEC    = 1.0
 MAX_RETRIES  = 3
-MAX_EXAMPLES = 20
+MAX_EXAMPLES = 150
 
 load_dotenv()
 
-genai.configure(
-    api_key=os.getenv("GOOGLE_API_KEY")
+# client = ChatOpenAI(
+#     api_key=os.getenv("OPENAI_API_KEY")
+# )
+
+MODEL_NAME = "gpt-4.1-mini"
+# # Prompt templates (teacher → student distillation style)
+
+
+llm = ChatOpenAI(
+    model=MODEL_NAME,
+    temperature=0.7,
+    max_tokens=30000,
+    timeout=60
 )
-
-
-MODEL_NAME = "gemini-3-flash-preview"
-# Prompt templates (teacher → student distillation style)
-
 
 def concept_prompt(topic: str, category: str, difficulty: str) -> dict:
     """Returns an Alpaca record for concept explanation."""
@@ -89,12 +96,7 @@ PROMPT_BUILDERS = [concept_prompt, coding_prompt, mcq_prompt]
 PROMPT_TYPES    = ["concept", "coding", "mcq"]
 
 
-def call_google(system: str, instruction: str, input_ctx: str) -> str | None:
-
-    model = genai.GenerativeModel(
-        model_name=MODEL_NAME,
-        system_instruction=system
-    )
+def call_openai(system: str, instruction: str, input_ctx: str) -> str | None:
 
     prompt = f"""
 Instruction:
@@ -107,17 +109,20 @@ Input:
     for attempt in range(1, MAX_RETRIES + 1):
 
         try:
-            response = model.generate_content(prompt)
-            if hasattr(response, "text") and response.text:
-                return response.text.strip()
+            response = llm.invoke([
+                SystemMessage(content=system),
+                HumanMessage(content=prompt)
+            ])
 
-            return response.text.strip()
+            return response.content.strip()
 
         except Exception as e:
             print(f"⚠ Attempt {attempt}/{MAX_RETRIES} failed: {e}")
             time.sleep(2 ** attempt)
 
     return None
+
+
 def build_alpaca_record(
     topic: str,
     category: str,
@@ -151,7 +156,7 @@ def generate_dataset(
     # Count existing lines so we can resume
     existing = 0
     if out_path.exists():
-        with open(out_path, "r") as f:
+        with open(out_path, "r", encoding="utf-8", errors="replace") as f:
             existing = sum(1 for _ in f)
         print(f"Resuming — {existing} records already in {output_file}")
 
@@ -190,7 +195,7 @@ def generate_dataset(
                 print(f"  [{generated + failed + 1}/{total}] {ptype:8s} | {topic}")
 
                 tmpl   = builder(topic, category, difficulty)
-                output = call_google(
+                output = call_openai(
                     tmpl["system"], tmpl["instruction"], tmpl["input"]
                 )
 

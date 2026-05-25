@@ -1,4 +1,4 @@
-generated/*
+hf_dataset/*
 .env
 readme.md
-hub.py
+dataset.jsonl
